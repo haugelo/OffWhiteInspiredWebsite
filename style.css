@@ -1,0 +1,87 @@
+body {
+  background-color: #EAF4EC;
+  font-family: "Helvetica";
+  text-align:center;
+  margin: auto;
+}
+
+.FrontVideoPanel {
+}
+
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
+#mainVideo {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.SampleCatalog h1{
+    background-color: white;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin:0;
+}
+
+.SampleCatalog a {
+  color: black;
+  text-decoration: none;
+}
+
+.MiddlePanel {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  margin:0;
+  width: 100%;
+  padding: 0;
+}
+
+.MiddlePanel img{
+  width: 17%;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+#OffWhiteH1 {
+  font-size: 100px;
+}
+
+.EditorialPanel {
+  margin: 0;
+  background-color: #212121;
+  padding: 2%;
+}
+
+.EditorialPanel img{
+  width: 60%;
+}
+
+.AboutUsPanel {
+  margin: 2%;
+  padding: 2%;
+}
+
+.AboutUsPanel h1 {
+  text-align: left;
+}
+
+.Footer {
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #EAF4EC;
+  font-size: 16px;
+}
+
+.Footer a {
+  color: #EAF4EC;
+  text-decoration: none;
+}

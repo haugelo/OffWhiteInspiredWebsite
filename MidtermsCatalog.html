@@ -1,0 +1,497 @@
+<!--Tagulao, Paulo-->
+<!--Groupmate: Dy-Reyes, Angelo Nathan-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Off-White Catalog</title>
+	<style>
+		body{
+			background-color: #EAF4EC;
+		}
+		form{
+			width: 100px;
+			margin: auto;
+			margin-top: 250px;
+		}
+		.search{
+			width: 14%;
+			padding: 0px;
+			font-family: Helvetica;
+			font-size: 20px;
+			
+			
+		}
+		.submit{
+			width: 10%;
+			padding: 0px;
+			font-size: 20px;
+			color: black;
+			
+		}
+		.sidebar{
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: white;
+			position: static;
+			height: 1000%;
+			overflow: auto;
+		}
+		.sidebar a{
+			display: block;
+			color:  black;
+			padding: 16px;
+			text-decoration: none;
+		}
+		div.title{
+			font-family: Helvetica;
+			font-size: 50px;
+			text-align: center;
+			background-color: #EAF4EC;
+			color: black;
+		}
+		div.gallery{
+			margin:5px;
+			border: 1px;
+			position:absolute; left:250px; top: 100px;
+			width: 280px;
+		}
+
+		div.gallery:hover{
+			border: 1px solid #777;
+		}
+		div.gallery img{
+			width: 100%;
+			height: 200px;
+
+		}
+		div.desc{
+			padding: 15px;
+			text-align: center;
+			font-family: Helvetica;
+			font-size: 14px;
+			background-color: white;
+		}
+		div.galleryone{
+			margin:10px;
+			border: 1px;
+			position:absolute; left:550px; top: 100px;
+			width: 280px;
+		}
+		div.galleryone:hover{
+			border: 1px solid #777;
+		}
+		div.galleryone img{
+			width: 100%;
+			height: 200px;
+		}
+		div.gallerytwo{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 850px; top: 100px;
+			width: 280px;
+		}
+		div.gallerytwo:hover{
+			border: 1px solid #777;
+		}
+		div.gallerytwo img{
+			width: 100%;
+			height: 200px;
+		}
+		div.gallerythree{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 1150px; top: 100px;
+			width: 280px;
+		}
+		div.gallerythree:hover{
+			border: 1px solid #777;
+		}
+		div.gallerythree img{
+			width: 100%;
+			height: 200px;
+		}
+		div.galleryfour{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 250px; top: 400px;
+			width: 280px;
+		}
+		div.galleryfour:hover{
+			border: 1px solid #777;
+		}
+		div.galleryfour img{
+			width: 100%;
+			height: 200px;
+		}
+		div.galleryfive{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 550px; top: 400px;
+			width: 280px;
+		}
+		div.galleryfive:hover{
+			border: 1px solid #777;
+		}
+		div.galleryfive img{
+			width: 100%;
+			height: 200px;
+		}
+		div.gallerysix{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 850px; top: 400px;
+			width: 280px;
+		}
+		div.gallerysix:hover{
+			border: 1px solid #777;
+		}
+		div.gallerysix img{
+			width: 100%;
+			height: 200px;
+		}
+		div.galleryseven{
+			margin: 10px;
+			border: 1px;
+			position: absolute; left: 1150px; top: 400px;
+			width: 280px;
+		}
+		div.galleryseven:hover{
+			border: 1px solid #777;
+		}
+		div.galleryseven img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatstitle{
+			font-family: Helvetica;
+			font-size: 50px;
+			text-align: center;
+			position: absolute; left: 600px; top: 700px;
+			background-color: #EAF4EC;
+			color: black;
+		}
+		div.coatsgallery{
+			margin:5px;
+			border: 1px;
+			position:absolute; left:250px; top: 800px;
+			width: 280px;
+		}
+		div.coatsgallery:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgallery img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgalleryone{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 550px; top: 800px;
+			width: 280px;
+		}
+		div.coatsgalleryone:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgalleryone img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgallerytwo{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 850px; top: 800px;
+			width: 280px;
+		}
+		div.coatsgallerytwo:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgallerytwo img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgallerythree{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 1150px; top: 800px;
+			width: 280px;
+		}
+		div.coatsgallerythree:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgallerythree img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgalleryfour{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 250px; top: 1100px;
+			width: 280px;
+		}
+		div.coatsgalleryfour:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgalleryfour img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgalleryfive{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 550px; top: 1100px;
+			width: 280px;
+		}
+		div.coatsgalleryfive:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgalleryfive img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgallerysix{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 850px; top: 1100px;
+			width: 280px;
+		}
+		div.coatsgallerysix:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgallerysix img{
+			width: 100%;
+			height: 200px;
+		}
+		div.coatsgalleryseven{
+			margin: 5px;
+			border: 1px;
+			position: absolute; left: 1150px; top: 1100px;
+			width: 280px;
+		}
+		div.coatsgalleryseven:hover{
+			border: 1px solid #777;
+		}
+		div.coatsgalleryseven img{
+			width: 100%;
+			height: 200px;
+		}
+		img.one{
+			position: absolute; left: 450px; top: 1400px;
+			width: 350px;
+			height: 400px;
+		}
+		img.two{
+			position: absolute; left: 950px; top: 1400px;
+			width: 350px;
+			height: 400px;
+		}
+		
+		div.footer{
+			clear:both;
+			height: 250%;
+			width: 100%;
+			text-align: center;
+			background-color: black;
+			color: white;
+		}
+		p.head{
+			font-family: Helvetica;
+			font-size: 20px;
+			text-align: center;
+		}
+		p.content{
+			font-family: Helvetica;
+			font-size: 15px;
+			text-align: center;
+		}
+		
+		p.headtwo{
+			font-family: Helvetica;
+			font-size: 20px;
+			text-align: center;
+
+
+			
+		}
+		p.contenttwo{
+			font-family: Helvetica;
+			font-size: 15px;
+			text-align: center;
+
+		}
+		p.contentlast{
+			font-family: Helvetica;
+			font-size: 15px;
+			text-align: center; 
+		}
+	</style>
+</head>
+<body>
+<input type="text" name="text" class="search" placeholder="Search Here">
+<input type="submit" name="submit" class="submit" value="Search">
+<div class="title"><b>"Clothing"</b></div>
+<div class="gallery" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white bart.jpg">
+		<img src="img/off-white bart.jpg" alt="Bart Simpson shirt" width="600" height="400">
+	</a>
+	<div class="desc">Bart Simpson Shirt<br> $100</div>
+</div>
+<div class="galleryone" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white hand.jpg">
+		<img src="img/off-white hand.jpg" alt="off-white hand shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White hand Shirt<br> $250</div>
+</div>
+<div class="gallerytwo" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white location.jpg">
+		<img src="img/off-white location.jpg" alt="off-white location shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Location Shirt<br> $150</div>
+</div>
+<div class="gallerythree" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white play.jpg">
+		<img src="img/off-white play.jpg" alt="off-white play shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Play Shirt<br> $280</div>
+</div>
+<div class="galleryfour" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white spider arrow.jpg">
+		<img src="img/off-white spider arrow.jpg" alt="off-white location shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Spider Arrow Shirt<br> $180</div>
+</div>
+<div class="galleryfive" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white&blue marker.jpg">
+		<img src="img/off-white&blue marker.jpg" alt="off-white & blue shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White & Blue Shirt<br> $180</div>
+</div>
+<div class="gallerysix" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white diag spray.jpg">
+		<img src="img/off-white diag spray.jpg" alt="off-white pivot fish shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Diag Spray S/S Shirt<br> $200</div>
+</div>
+<div class="galleryseven" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white pivot fish.jpg">
+		<img src="img/off-white pivot fish.jpg" alt="off-white pivot fish shirt" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Pivot Fish Shirt<br> $150</div>
+</div>
+
+<div class="coatstitle"><b>"Coats and Outerwear"</b></div>
+<div class="coatsgallery" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white black printed jacket 1001.jpg">
+		<img src="img/off-white black printed jacket 1001.jpg" alt="off-white black printed jacket 1001" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Black Printed Jacket<br> $350</div>
+</div>
+<div class="coatsgalleryone" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white grey camo jacket.jpg">
+		<img src="img/off-white grey camo jacket.jpg" alt="off-white grey camo jacket" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Grey Camo Jacket <br> $350</div>
+</div>
+<div class="coatsgallerytwo" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white parajumper women's jacket.jpg">
+		<img src="img/off-white parajumper women's jacket.jpg" alt="off-white parajumper women's jacket" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Parajumper Women's Jacket<br> $400</div>
+</div>
+<div class="coatsgallerythree" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white vintage denim jacket.jpg">
+		<img src="img/off-white vintage denim jacket.jpg" alt="off-white " width="600" height="400">
+	</a>
+	<div class="desc">Off-White vintage Denim jacket<br> $500</div>
+</div>
+<div class="coatsgalleryfour" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white women's leather jacket.jpg">
+		<img src="img/off-white women's leather jacket.jpg" alt="off-white women's leather jacket " width="600" height="400">
+	</a>
+	<div class="desc">Off-White Women's Leather Jacket <br> $450</div>
+</div>
+<div class="coatsgalleryfive" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white helium hybrid jacket.jpg">
+		<img src="img/off-white helium hybrid jacket.jpg" alt="off-white " width="600" height="400">
+	</a>
+	<div class="desc">Off-White Helium Hybrid Jacket<br> $800</div>
+</div>
+<div class="coatsgallerysix" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white xmas digital printed jacket.jpg">
+		<img src="img/off-white xmas digital printed jacket.jpg" alt="off-white " width="600" height="400">
+	</a>
+	<div class="desc">Off-White Xmas Digital Printed Jacket<br> $500</div>
+</div>
+<div class="coatsgalleryseven" style="background-color: #EAF4EC">
+	<a target="_blank" href="off-white grey hoodie.jpg">
+		<img src="img/off-white grey hoodie.jpg" alt="off-white grey hoodie" width="600" height="400">
+	</a>
+	<div class="desc">Off-White Grey Hoodie<br> $200</div>
+</div>
+<div class="sidebar">
+	<a style="font-family: helvetica; font-size: 19px;" href="#sortby"><b>OFF-WHITE CATALOG</b></a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#recommend">Recommended</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#newarrive">New Arrivals</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#lowprice">Lowest Price</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#highprice">Highest Price</a>
+	<a style="font-family: helvetica; font-size: 19px;" href="#categories"><b>CATEGORIES</b></a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#clothing">Clothing</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#coats&outer">Coats and Outerwear</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#denim">Denim</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#jacket">Jackets</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#pants">Pants</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#shirts">Shirts</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#Sweatshirts&knit">Sweatshirts & Knitwear</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#Swimwear">Swimwear</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#T-shirt">T-shirts</a>
+	<a style="font-family: helvetica; font-size: 19px;" href="#color"><b>COLORS</b></a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#black">Black</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#blue">Blue</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#green">Green</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#grey">Grey</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#neutrals">Neutrals</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#orange">Orange</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#red">Red</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#whiite">White</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#yellow">Yellow</a>
+	<a style="font-family: helvetica; font-size: 19px;" href="#sizes"><b>SIZES</b></a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#xxs">XXS</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#Large">L</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#Medium">M</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#small">S</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#XL">XL</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#XS">XS</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#XXL">XXL</a>
+	<a style="font-family: helvetica; font-size: 19px;" href="#categories"><b>GENDER</b></a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#men">Men</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#unisex">Unisex</a>
+	<a style="font-family: helvetica; font-size: 13px;" href="#Women">Women</a>
+</div>
+<div>
+	<img class="one" src="img/off-white home collection.png" alt="off-white home collection poster">
+	<img class="two" src="img/out of office sneaker.png" alt="out of office sneakers ">
+</div>
+<div class="footer">
+	<p class="head"><b>Customer Service<b></p>
+	<p class="content">FAQS</p>
+	<p class="content">Shipping & Return</p>
+	<p class="content">Payment Methods</p>
+		<a href="finals.html">
+		<p>Contact Us</p>
+	</a>
+	<p class="content">Guest Returns</p>
+	<p class="headtwo"><b>Site Policy</b></p>
+	<p class="contenttwo">Privacy & Cookie Policy</p>
+	<p class="contenttwo">Cookie Preferences</p>
+	<p class="contenttwo">Regulatory Framework</p>
+	<p class="contentlast">
+		Company subject to management and coordination by New Guards Group Holding S.p.A, pursuant to art. 2497 and following of the Italian civil code.<br>
+		VAT ID: IT08436950961
+		© 2020 Off-White™. All rights reserved.</p>
+
+</div>
+
+
+
+</body>
+</html>
